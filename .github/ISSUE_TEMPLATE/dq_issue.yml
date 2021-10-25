@@ -1,0 +1,50 @@
+name: DQ Issue
+description: File a bug report
+title: "[DQ Issue]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Data Quality Issue
+  - type: input
+    id: source
+    attributes:
+      label: Ticket Source (Team)
+      placeholder: ex. Second Measure
+    validations:
+      required: true
+  - type: input
+    id: email
+    attributes:
+      label: Contact Email
+      placeholder: ex. support@secondmeasure.com
+    validations:
+      required: false
+  - type: input
+    id: sm_id
+    attributes:
+      label: sm_id
+      description: Which company was the issue detected for? 
+      placeholder: ex. BloombergCom
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Identified Error
+      description: Describe what is wrong with the data, include links when helpful.
+      placeholder: Tell us what you see!
+    validations:
+      required: true
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: What is the priority level of the request.
+      value: "Normal"
+      options:
+        - Normal
+        - High
+        - Urgent
+    validations:
+      required: true
