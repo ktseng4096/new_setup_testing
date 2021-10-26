@@ -41,7 +41,6 @@ body:
     attributes:
       label: Priority
       description: What is the priority level of the request.
-      value: "Normal"
       options:
         - Normal
         - High
